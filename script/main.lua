@@ -17,7 +17,7 @@ if game.PlaceId == 1215581239 then
 
     -- Welcome Stuff --
     local wcsec = welcomeTab:NewSection("Howdy")
-    wcsec:NewLabel("Some updates and shit...\n\nv1.0 - Legit nothing lmfao")
+    wcsec:NewLabel("Changelog on my github")
     
     -- LP Sections --
     local lpsec = LPTab:NewSection("Player")
@@ -33,32 +33,24 @@ if game.PlaceId == 1215581239 then
         lplr.Character.Humanoid.JumpPower = jpvalue
     end)
 
-    lpsec:NewSlider("FOV", "Makes you look like csgo cheater lol", 120, 70, function(fovvalue)
-        _G.Fov = true
-        while _G.Fov == true do
-            CurrentCamera.FieldOfView = fovvalue
-            wait()
-        end
-    end)
-
     lpsec:NewSlider("Gravity", "U on da moon", 196, 5, function(gvalue)
         game.Workspace.Gravity = gvalue
     end)
 
     TPSec:NewButton("Blue Team", "Teleports to Blue Tower", function()
-        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-24.4, 25.9, 181.9)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-0.00300598, 26, 131)
     end)
 
     TPSec:NewButton("Yellow Team", "Teleports to Yello Tower", function()
-        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(106.6, 28.2, 51.1)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(130.996, 26, -0.000212)
     end)
     
     TPSec:NewButton("Red Team", "Teleports to Red Tower", function()
-        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-155.4, 25.2, 51.4)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-131.003, 26, -0.00012)
     end)
 
     TPSec:NewButton("Green Team", "Teleports to Green Tower", function()
-        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-24.6, 24.8, -80.3)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-0.00388336, 26, -131)
     end)
 else
     game:GetService("Players").LocalPlayer:Kick("\n\nBro...\n\n This isn't Doomspire Brickbattle.\n\n This script won't work here lmfao.\n")
