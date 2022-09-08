@@ -1,14 +1,13 @@
 if game.PlaceId == 1215581239 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-    local Window = Library.CreateLib("Doomspire Brickbattle", "Ocean")
+    local Window = Library.CreateLib("Doomspire Brickbattle", "Synapse")
 
     local welcomeTab = Window:NewTab("Welcome")
     
     local LPTab = Window:NewTab("LocalPlayer")
 
     local TeleportTab = Window:NewTab("Teleports")
-
 
     -- Vars --
     local lplr = game:GetService("Players").LocalPlayer
@@ -17,7 +16,7 @@ if game.PlaceId == 1215581239 then
 
     -- Welcome Stuff --
     local wcsec = welcomeTab:NewSection("Howdy")
-    wcsec:NewLabel("Changelog on my github")
+    wcsec:NewLabel("Update 1.1 - Changed UI Theme")
     
     -- LP Sections --
     local lpsec = LPTab:NewSection("Player")
